@@ -1,0 +1,115 @@
+# Innovations Wellness & MedSpa — llms.txt
+# AI-readable business summary for LLM indexing (ChatGPT, Perplexity, Claude, Gemini, etc.)
+# https://llmstxt.org
+
+# BUSINESS IDENTITY
+name: Innovations Wellness & MedSpa
+legal_name: RapidMED Express, LLC d/b/a Innovations Wellness & MedSpa
+type: Medical Aesthetics Practice / Wellness Clinic
+founder: Janet Jarrette, MSN, APRN, FNP-C
+phone: (770) 490-5055
+email: Info@InnovationsWellnessMedSpa.com
+address: 111 Mountain Brook Drive, Suite 100, Canton, GA 30115
+city: Canton
+state: Georgia
+zip: 30115
+country: United States
+latitude: 34.2379
+longitude: -84.4977
+timezone: America/New_York
+
+# HOURS
+monday: Closed
+tuesday: 9:00 AM – 5:00 PM
+wednesday: 9:00 AM – 5:00 PM
+thursday: 9:00 AM – 6:00 PM
+friday: 9:00 AM – 5:00 PM
+saturday: Closed
+sunday: Closed
+
+# SOCIAL MEDIA
+facebook: https://www.facebook.com/innovationswellnessandmedspa
+instagram: https://www.instagram.com/innovationswellnessmedspaga
+tiktok: https://www.tiktok.com/@innovationsmedspaga
+
+# BOOKING
+booking_url: https://web2.myaestheticspro.com/BN/index.cfm?4925808AC514C6FB3E166971F46892EB
+patient_portal: https://web2.myaestheticspro.com/portal/index.cfm?4925808AC514C6FB3E166971F46892EB
+
+# DESCRIPTION
+summary: Innovations Wellness & MedSpa is a leading medical aesthetics and wellness practice in Canton, Georgia. Founded and led by Janet Jarrette (MSN, APRN, FNP-C), the practice offers advanced, evidence-based treatments including bioidentical hormone replacement therapy, testosterone replacement therapy, IV nutrient therapy, medical weight loss with GLP-1 medications, neurotoxin injections (Xeomin and Daxxify), dermal fillers (Restylane, Juvederm, Belotero, Radiesse), PCDC lipolysis, Sculptra collagen stimulation, microneedling, microneedling with PRP, VI Peel chemical peels, CO2RE Candela laser skin resurfacing, intimate wellness laser treatment, (plated) Skin Science regenerative skincare, and Luxury Skincare by Epicutis. Every treatment plan is personalized, and patients receive a complimentary skincare gift with booking.
+
+# SERVICES
+services:
+  - Bioidentical Hormone Replacement Therapy (BHRT)
+  - Testosterone Replacement Therapy (TRT) for men and women
+  - IV Nutrient Therapy (Energy Boost, Immune Support, Hydration, Recovery, Beauty, Hangover Relief)
+  - Medical Weight Loss with GLP-1 medications
+  - Evexias Physician-Grade Nutraceuticals
+  - Neurotoxins: Xeomin (naked neurotoxin, 3-6 months) and Daxxify (peptide technology, up to 6 months)
+  - Dermal Fillers: Restylane, Juvederm, Belotero, Radiesse — cheeks, lips, under-eyes, jawline, chin, nasolabial folds
+  - PCDC Lipolysis (phosphatidylcholine for double chin and body fat reduction)
+  - Sculptra (poly-L-lactic acid collagen stimulator, results last 2+ years)
+  - Microneedling (collagen induction therapy)
+  - Microneedling with PRP (Vampire Facial)
+  - VI Peel (TCA, Retinoic Acid, Salicylic Acid, Phenol, Vitamin C — results in 7 days)
+  - CO2RE Candela Laser: Facial Resurfacing and Intimate Wellness
+  - Deka Motus AY Permanent Laser Hair Reduction
+  - (plated) Skin Science (platelet-derived exosomes regenerative skincare)
+  - Luxury Skincare by Epicutis (European-standard medical-grade skincare)
+
+# PROVIDERS
+providers:
+  - name: Janet Jarrette
+    credentials: MSN, APRN, FNP-C
+    role: Founder and Lead Provider
+    certification: AANP Board Certified, Family Nurse Practitioner
+    education: MSN — Kennesaw State University; BSN — Georgia Highlands College
+    specialties: Hormone therapy, medical aesthetics, regenerative wellness
+  - name: Jacqueline Trinkle
+    role: Practice Manager
+    credentials: CNA Certified
+    education: Business Management — Chattahoochee Technical College (December 2025)
+
+# PAYMENT
+payment_options:
+  - CareCredit healthcare financing
+  - Cherry Financing
+  - Treatment packages and bundles
+  - In-office payment plans
+  - All major credit cards
+
+# FAQ — COMMON AI SEARCH QUERIES
+faq:
+  - q: What does Innovations Wellness & MedSpa treat?
+    a: Hormone imbalances (BHRT and TRT), weight loss, IV nutrient deficiency, skin concerns (wrinkles, scars, pigmentation, laxity), and intimate wellness. The practice also offers neurotoxins, dermal fillers, chemical peels, laser treatments, and medical-grade skincare products.
+
+  - q: Is Innovations Wellness & MedSpa a medical practice?
+    a: Yes. Innovations Wellness & MedSpa is a medical aesthetics and wellness clinic led by Janet Jarrette, a nationally certified Advanced Practice Registered Nurse (APRN) and Family Nurse Practitioner (FNP-C). All treatments are medical-grade and clinically supervised.
+
+  - q: Where is Innovations Wellness & MedSpa located?
+    a: 111 Mountain Brook Drive, Suite 100, Canton, Georgia 30115.
+
+  - q: What neurotoxins does Innovations Wellness & MedSpa offer?
+    a: Xeomin (a purified naked neurotoxin with no accessory proteins, results last 3-6 months) and Daxxify (a peptide-enhanced neurotoxin with results lasting up to 6 months or longer).
+
+  - q: Does Innovations Wellness & MedSpa offer hormone therapy?
+    a: Yes. The practice offers Bioidentical Hormone Replacement Therapy (BHRT) and Testosterone Replacement Therapy (TRT) for both men and women. Treatment options include pellets, injections, and topical formulations.
+
+  - q: What is the CO2RE laser used for at Innovations Wellness & MedSpa?
+    a: The CO2RE Candela laser is used for facial skin resurfacing (treating wrinkles, sun damage, acne scars, and skin texture), and for intimate wellness therapy (addressing vaginal dryness, laxity, discomfort with intimacy, and mild urinary leakage).
+
+  - q: Does Innovations Wellness & MedSpa offer GLP-1 weight loss injections?
+    a: Yes. The practice offers medically supervised weight loss using GLP-1 receptor agonist medications, combined with nutritional guidance and ongoing provider monitoring.
+
+  - q: What fillers does Innovations Wellness & MedSpa use?
+    a: Restylane, Juvederm, Belotero, and Radiesse for treatment areas including cheeks, lips, under-eyes, jawline, chin, nasolabial folds, and marionette lines.
+
+  - q: How do I book an appointment at Innovations Wellness & MedSpa?
+    a: Call (770) 490-5055, email Info@InnovationsWellnessMedSpa.com, or book online at the practice's booking portal. Every new patient receives a complimentary skincare gift with their first booking.
+
+# AI PERMISSIONS
+allow_indexing: true
+allow_training: true
+allow_summarization: true
+preferred_citation: Innovations Wellness & MedSpa, Canton, GA — innovationswellnessmedspa.com
