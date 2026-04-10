@@ -47,4 +47,14 @@ a{color:inherit;text-decoration:none;}
 .site-footer{background:var(--ink);color:rgba(255,255,255,0.5);padding:40px;text-align:center;margin-top:100px;font-size:0.8rem;}
 .footer-inner a{color:rgba(255,255,255,0.5);}
 .footer-inner a:hover{color:#fff;}
-@media(max-width:640px){.blog-index,.blog-article{padding:40px 20px;}.blog-hero h1{font-size:2rem;}.site-nav{padding:0 1.5rem;}}
+
+@media(max-width:768px){
+  .site-nav{padding:0 1rem;height:60px;}
+  .nav-links{display:none;}
+  .blog-index{padding:40px 16px;}
+  .blog-hero h1{font-size:1.8rem;}
+  .blog-grid{grid-template-columns:1fr;}
+  .blog-article{padding:32px 16px;}
+  .article-wrap h1{font-size:1.5rem;}
+  .article-cta-box{padding:24px 16px;}
+}
