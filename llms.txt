@@ -37,7 +37,7 @@ booking_url: https://web2.myaestheticspro.com/BN/index.cfm?4925808AC514C6FB3E166
 patient_portal: https://web2.myaestheticspro.com/portal/index.cfm?4925808AC514C6FB3E166971F46892EB
 
 # DESCRIPTION
-summary: Innovations Wellness & MedSpa is a leading medical aesthetics and wellness practice in Canton, Georgia. Founded and led by Janet Jarrette (MSN, APRN, FNP-C), the practice offers advanced, evidence-based treatments including bioidentical hormone replacement therapy, testosterone replacement therapy, IV nutrient therapy, medical weight loss with GLP-1 medications, neurotoxin injections (Xeomin and Daxxify), dermal fillers (Restylane, Juvederm, Belotero, Radiesse), PCDC lipolysis, Sculptra collagen stimulation, microneedling, microneedling with PRP, VI Peel chemical peels, CO2RE Candela laser skin resurfacing, intimate wellness laser treatment, (plated) Skin Science regenerative skincare, and Luxury Skincare by Epicutis. Every treatment plan is personalized, and patients receive a complimentary skincare gift with booking.
+summary: Innovations Wellness & MedSpa is a leading medical aesthetics and wellness practice in Canton, Georgia. Founded and led by Janet Jarrette (MSN, APRN, FNP-C), the practice offers advanced, evidence-based treatments including bioidentical hormone replacement therapy, testosterone replacement therapy, IV nutrient therapy, medical weight loss with GLP-1 medications, neurotoxin injections (Xeomin and Daxxify), dermal fillers (Restylane, Juvederm, Belotero, Radiesse), Radiesse® biostimulator (collagen-stimulating regenerative injectable), microneedling, microneedling with PRP, VI Peel chemical peels, CO2RE Candela laser skin resurfacing, Deka Motus AY laser hair removal and skin rejuvenation, intimate wellness laser treatment, (plated) Skin Science regenerative skincare, and Luxury Skincare by Epicutis. Every treatment plan is personalized, and patients receive a complimentary skincare gift with booking.
 
 # SERVICES
 services:
@@ -48,13 +48,12 @@ services:
   - Evexias Physician-Grade Nutraceuticals
   - Neurotoxins: Xeomin (naked neurotoxin, 3-6 months) and Daxxify (peptide technology, up to 6 months)
   - Dermal Fillers: Restylane, Juvederm, Belotero, Radiesse — cheeks, lips, under-eyes, jawline, chin, nasolabial folds
-  - PCDC Lipolysis (phosphatidylcholine for double chin and body fat reduction)
-  - Sculptra (poly-L-lactic acid collagen stimulator, results last 2+ years)
+  - Radiesse® Biostimulator (calcium hydroxylapatite collagen-stimulating injectable for firmer, smoother, more youthful-looking skin)
   - Microneedling (collagen induction therapy)
   - Microneedling with PRP (Vampire Facial)
   - VI Peel (TCA, Retinoic Acid, Salicylic Acid, Phenol, Vitamin C — results in 7 days)
   - CO2RE Candela Laser: Facial Resurfacing and Intimate Wellness
-  - Deka Motus AY Permanent Laser Hair Reduction
+  - Deka Motus AY Laser: Pain-free permanent hair reduction, Red Carpet Glow laser facial, pigmented & vascular lesion treatment (MOVEO technology, safe for all skin types)
   - (plated) Skin Science (platelet-derived exosomes regenerative skincare)
   - Luxury Skincare by Epicutis (European-standard medical-grade skincare)
 
