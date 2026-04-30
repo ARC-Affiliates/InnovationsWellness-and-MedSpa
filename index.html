@@ -330,6 +330,9 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
     </g>
   </svg>
 
+  <div class="hero-warm-imagery">
+    <img class="hero-img-main" src="https://images.pexels.com/photos/3762760/pexels-photo-3762760.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Beautiful client at Innovations Wellness MedSpa Canton GA" fetchpriority="high" decoding="async" loading="eager">
+  </div>
   <div class="hero-warm-inner">
     <div class="hero-warm-text">
       <div class="label fade-in" style="margin-bottom:1.25rem;">A Warm Welcome &#183; Canton, Georgia</div>
@@ -353,14 +356,6 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
         <span>10+ Years in Practice</span>
         <span aria-hidden="true">&#183;</span>
         <span>Complimentary Welcome Gift</span>
-      </div>
-    </div>
-
-    <div class="hero-warm-imagery">
-      <img class="hero-img-main" src="https://images.pexels.com/photos/3762760/pexels-photo-3762760.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Beautiful client at Innovations Wellness MedSpa Canton GA" fetchpriority="high" decoding="async" loading="eager">
-      <div class="hero-img-pair">
-        <img class="hero-img-sm" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1400&q=90" alt="Facial treatment at Innovations Wellness MedSpa" loading="lazy" decoding="async">
-        <img class="hero-img-sm" src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1400&q=90" alt="Skincare treatment at Innovations Wellness MedSpa" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
@@ -520,7 +515,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
 .hero-sprig-tl{top:6rem;left:-1.5rem;transform-origin:top left;}
 .hero-sprig-br{bottom:11rem;right:2.5rem;width:110px;transform-origin:bottom right;animation-delay:-4s;}
 @keyframes sprigSway{from{transform:rotate(-2deg);}to{transform:rotate(2.5deg);}}
-.hero-warm-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr 1fr;gap:4.5rem;align-items:center;max-width:1320px;margin:0 auto;padding:6.5rem 3rem 5rem;min-height:84svh;}
+.hero-warm-inner{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;max-width:580px;padding:7rem 2rem 6rem 5rem;min-height:84svh;}
 .hero-warm-text{position:relative;display:flex;flex-direction:column;justify-content:center;}
 .hero-h1{font-family:'Playfair Display',serif;font-weight:400;line-height:0.98;color:var(--ink);margin-bottom:0;display:flex;flex-direction:column;align-items:flex-start;}
 .hero-welcome-word{font-style:italic;font-size:clamp(4.5rem,8.5vw,8rem);color:var(--rose);line-height:0.9;letter-spacing:-0.015em;display:inline-block;position:relative;padding-right:1.5rem;}
@@ -560,8 +555,8 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
 .welcome-dot{width:5px;height:5px;background:var(--rose);border-radius:50%;opacity:0.65;flex-shrink:0;}
 @media(max-width:640px){.welcome-band em{font-size:0.9rem;}.welcome-band{padding:1.1rem 1rem;}}
 /* Hero imagery collage — three warm portrait images */
-.hero-warm-imagery{position:relative;z-index:2;display:grid;grid-template-rows:1.65fr 1fr;gap:0.85rem;height:580px;-webkit-mask-image:radial-gradient(ellipse 96% 94% at 52% 46%, black 48%, transparent 82%);mask-image:radial-gradient(ellipse 96% 94% at 52% 46%, black 48%, transparent 82%);}
-.hero-img-main{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;image-rendering:-webkit-optimize-contrast;image-rendering:high-quality;}
+.hero-warm-imagery{position:absolute;right:0;top:0;width:62%;height:100%;z-index:1;-webkit-mask-image:linear-gradient(to right,transparent 0%,black 24%,black 100%);mask-image:linear-gradient(to right,transparent 0%,black 24%,black 100%);}
+.hero-img-main{width:100%;height:100%;object-fit:cover;object-position:30% top;display:block;image-rendering:-webkit-optimize-contrast;image-rendering:high-quality;}
 .hero-img-pair{display:grid;grid-template-columns:1fr 1fr;gap:0.85rem;height:100%;}
 .hero-img-sm{width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block;image-rendering:-webkit-optimize-contrast;image-rendering:high-quality;}
 /* signature script for Janet's name */
@@ -570,8 +565,8 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
 .hero-welcome-note cite{display:block;font-style:normal;text-transform:none;letter-spacing:0;color:var(--muted);padding-top:0.35rem;}
 .hero-welcome-note cite span{margin:0;padding:0;border:none;color:inherit;}
 .hero-crisscross{position:absolute;left:0;right:0;bottom:0;width:100%;height:140px;display:block;z-index:2;}
-@media(max-width:1024px){.hero-warm-inner{grid-template-columns:1fr;gap:2.5rem;padding:4.5rem 1.75rem 3.5rem;min-height:auto;}.hero-warm-imagery{height:360px;order:-1;}.hero-img-pair{gap:0.6rem;}.hero-warm-stats{gap:1.75rem;margin-top:2.5rem;padding-top:2rem;}.hero-warm{padding-bottom:90px;}.hero-crisscross{height:90px;}.hero-watercolor{top:2%;right:-20%;width:90%;opacity:0.7;}.hero-sprig-tl{top:2rem;left:-2rem;width:100px;}.hero-sprig-br{display:none;}.hero-welcome-word{font-size:clamp(3.5rem,12vw,5.5rem);}.hero-to::before,.hero-to::after{width:1.25rem;}.hero-signature{font-size:2rem;}}
-@media(max-width:540px){.hero-warm-stats{flex-wrap:wrap;gap:1.5rem 2.25rem;}.hero-warm-imagery{height:240px;}.hero-sprig-tl{display:none;}.hero-watercolor{display:none;}}
+@media(max-width:1024px){.hero-warm-inner{padding:4.5rem 1.75rem 22rem;min-height:auto;max-width:100%;}.hero-warm-imagery{position:absolute;width:100%;height:55%;top:auto;bottom:0;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 18%,black 100%);mask-image:linear-gradient(to bottom,transparent 0%,black 18%,black 100%);}.hero-warm{padding-bottom:90px;}.hero-crisscross{height:90px;}.hero-watercolor{top:2%;right:-20%;width:90%;opacity:0.7;}.hero-sprig-tl{top:2rem;left:-2rem;width:100px;}.hero-sprig-br{display:none;}.hero-welcome-word{font-size:clamp(3.5rem,12vw,5.5rem);}.hero-signature{font-size:2rem;}}
+@media(max-width:540px){.hero-warm-stats{flex-wrap:wrap;gap:1.5rem 2.25rem;}.hero-sprig-tl{display:none;}.hero-watercolor{display:none;}}
 </style>
 
 <footer class="site-footer-slim">
