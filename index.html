@@ -61,7 +61,7 @@ nav.main-nav{position:sticky;top:0;z-index:9900;background:rgba(250,248,245,0.96
 .nav-links li:hover>.dropdown{display:block;}
 .dropdown{display:none;position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow2);min-width:252px;z-index:200;padding:0.6rem 0;}
 .dropdown a{display:block;padding:0.5rem 1.35rem;font-size:0.66rem;letter-spacing:0.05em;color:var(--muted);transition:all 0.2s;}
-.dropdown a:hover{color:var(--rose);background:var(--rose-light);padding-left:1.6rem;}
+.dropdown a:not(.dropdown-cat):hover{color:var(--rose);background:var(--rose-light);padding-left:1.6rem;}.dropdown-cat:hover{color:var(--rose2);opacity:0.85;}
 .dropdown-cat{display:block;padding:0.65rem 1.35rem 0.25rem;font-size:0.52rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--rose);font-weight:500;border-top:1px solid var(--line2);margin-top:0.3rem;}
 .dropdown-cat:first-child{border-top:none;margin-top:0;}
 .nav-book{font-size:0.58rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:#fff;background:var(--rose);padding:0.62rem 1.35rem;transition:all 0.25s;white-space:nowrap;flex-shrink:0;}
@@ -226,25 +226,25 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
     <li><a href="/index.html">Home</a></li>
     <li><a href="/services/index.html">Services</a>
       <div class="dropdown">
-        <span class="dropdown-cat">Wellness</span>
+        <a class="dropdown-cat" href="/services/index.html#wellness">Wellness</a>
         <a href="/services/bioidentical-hormone-replacement-therapy/index.html">Bioidentical Hormone Therapy</a>
         <a href="/services/testosterone-replacement-therapy/index.html">Testosterone Replacement</a>
         <a href="/services/iv-nutrient-therapy/index.html">IV Nutrient Therapy</a>
         <a href="/services/weight-loss/index.html">Weight Loss</a>
         <a href="/services/nutraceuticals/index.html">Nutraceuticals</a>
-        <span class="dropdown-cat">Injectables</span>
+        <a class="dropdown-cat" href="/services/index.html#injectables">Injectables</a>
         <a href="/services/neurotoxins/index.html">Neurotoxins &#8211; Xeomin&reg; &amp; Daxxify&reg;</a>
         <a href="/services/dermal-fillers/index.html">Dermal Fillers</a>
         <a href="/services/biostimulators/index.html">Biostimulators &#8211; Radiesse&reg;</a>
-        <span class="dropdown-cat">Microneedling</span>
+        <a class="dropdown-cat" href="/services/index.html#skin">Microneedling</a>
         <a href="/services/microneedling/index.html">Microneedling</a>
         <a href="/services/microneedling-with-prp/index.html">Microneedling with PRP</a>
-        <span class="dropdown-cat">Chemical Peels</span>
+        <a class="dropdown-cat" href="/services/index.html#skin">Chemical Peels</a>
         <a href="/services/vi-peel/index.html">VI Peel</a>
-        <span class="dropdown-cat">Laser</span>
+        <a class="dropdown-cat" href="/services/index.html#skin">Laser</a>
         <a href="/co2re-candela-laser-treatment/index.html">CO2RE&reg; Laser Treatment</a>
         <a href="/services/deka-motus-ay/index.html">Deka Motus AY Laser</a>
-        <span class="dropdown-cat">Skincare</span>
+        <a class="dropdown-cat" href="/services/index.html#skin">Skincare</a>
         <a href="/services/plated-skin-science/index.html">(plated)&#x2122; Skin Science</a>
         <a href="/luxury-skincare-by-epicutis/index.html">Luxury Skincare by Epicutis</a>
       </div>
