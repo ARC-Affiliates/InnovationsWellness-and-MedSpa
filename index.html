@@ -371,7 +371,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
 </div>
 <section class="section" style="background:var(--white);">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:center;">
+    <div class="founder-grid">
       <div class="fade-in">
         <div class="label">A Note From Our Founder</div>
         <h2 class="sec-title">More Than a MedSpa.<br><em>A Place That Knows</em><br>Your Name.</h2>
@@ -445,7 +445,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
     </div>
   </div>
 </section>
-<section style="background:var(--blush);padding:7rem 3rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+<section class="quote-section">
   <div class="container" style="text-align:center;max-width:780px;">
     <div style="font-size:3rem;color:var(--rose);opacity:0.25;font-family:'Playfair Display',serif;line-height:1;margin-bottom:1rem;" aria-hidden="true">&#8220;</div>
     <p class="fade-in" style="font-family:'Playfair Display',serif;font-size:clamp(1.4rem,2.8vw,2.1rem);font-style:italic;color:var(--ink);line-height:1.55;margin-bottom:1.5rem;">We believe beauty is the natural result of optimal health &#8212; and we&#8217;re here to help you achieve both.</p>
@@ -458,12 +458,12 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
       <div class="label fade-in" style="justify-content:center;">Words From Our Family</div>
       <h2 class="sec-title fade-in">Why They <em>Keep Coming Back</em></h2>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;"><div class="card fade-in fade-in-delay-1"><div style="color:var(--rose);font-size:0.72rem;letter-spacing:3px;margin-bottom:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-size:0.82rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-style:italic;">"Absolutely love this place. The staff is so knowledgeable and welcoming. My skin has never looked better."</p><div style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);">Jenny R.</div></div><div class="card fade-in fade-in-delay-2"><div style="color:var(--rose);font-size:0.72rem;letter-spacing:3px;margin-bottom:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-size:0.82rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-style:italic;">"The hormone therapy has been life-changing. I feel like myself again &#8212; more energy, better sleep, and a truly positive outlook."</p><div style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);">Andrea J.</div></div><div class="card fade-in fade-in-delay-3"><div style="color:var(--rose);font-size:0.72rem;letter-spacing:3px;margin-bottom:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-size:0.82rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-style:italic;">"Janet and her team are exceptional. I came in for microneedling and left genuinely impressed. I'll be a client for life."</p><div style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);">Angela R.</div></div></div>
+    <div class="reviews-grid"><div class="card fade-in fade-in-delay-1"><div style="color:var(--rose);font-size:0.72rem;letter-spacing:3px;margin-bottom:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-size:0.82rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-style:italic;">"Absolutely love this place. The staff is so knowledgeable and welcoming. My skin has never looked better."</p><div style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);">Jenny R.</div></div><div class="card fade-in fade-in-delay-2"><div style="color:var(--rose);font-size:0.72rem;letter-spacing:3px;margin-bottom:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-size:0.82rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-style:italic;">"The hormone therapy has been life-changing. I feel like myself again &#8212; more energy, better sleep, and a truly positive outlook."</p><div style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);">Andrea J.</div></div><div class="card fade-in fade-in-delay-3"><div style="color:var(--rose);font-size:0.72rem;letter-spacing:3px;margin-bottom:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-size:0.82rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-style:italic;">"Janet and her team are exceptional. I came in for microneedling and left genuinely impressed. I'll be a client for life."</p><div style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);">Angela R.</div></div></div>
   </div>
 </section>
 <section class="section" style="background:var(--bg2);">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1.2fr 0.8fr 1fr;gap:5rem;align-items:start;flex-wrap:wrap;">
+    <div class="contact-grid">
       <div class="fade-in">
         <div class="label">Drop By</div>
         <h2 class="sec-title" style="margin-bottom:1.25rem;">Come <em>See Us</em></h2>
@@ -568,6 +568,15 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
 .hero-crisscross{position:absolute;left:0;right:0;bottom:0;width:100%;height:140px;display:block;z-index:2;}
 @media(max-width:1024px){.hero-warm-inner{max-width:100%;padding:4.5rem 1.75rem 3.5rem;min-height:auto;}.hero-warm-imagery{position:relative;width:100%;height:340px;-webkit-mask-image:linear-gradient(to bottom,black 70%,transparent 100%);mask-image:linear-gradient(to bottom,black 70%,transparent 100%);}.hero-img-main{object-position:center 20%;}.hero-warm-stats{gap:1.75rem;margin-top:2.5rem;padding-top:2rem;}.hero-warm{padding-bottom:90px;}.hero-crisscross{height:90px;}.hero-watercolor{top:2%;right:-20%;width:90%;opacity:0.7;}.hero-sprig-tl{top:2rem;left:-2rem;width:100px;}.hero-sprig-br{display:none;}.hero-welcome-word{font-size:clamp(3.5rem,12vw,5.5rem);}.hero-to::before,.hero-to::after{width:1.25rem;}.hero-signature{font-size:2rem;}}
 @media(max-width:540px){.hero-warm-stats{flex-wrap:wrap;gap:1.5rem 2.25rem;}.hero-warm-imagery{height:240px;}.hero-sprig-tl{display:none;}.hero-watercolor{display:none;}}
+@media(max-width:480px){.hero-warm-inner{padding:3rem 1.25rem 2.5rem;}.hero-welcome-word{font-size:clamp(2.8rem,9vw,4rem);}.section{padding:3.5rem 1.25rem;}.cta-warm{padding:3.5rem 1.25rem;}.mobile-nav{padding:5.5rem 1.25rem 3rem;}}
+/* RESPONSIVE GRIDS — inline grid sections converted to named classes */
+.founder-grid{display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:center;}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.contact-grid{display:grid;grid-template-columns:1.2fr 0.8fr 1fr;gap:5rem;align-items:start;}
+.quote-section{background:var(--blush);padding:7rem 3rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+@media(max-width:900px){.founder-grid{grid-template-columns:1fr;gap:3.5rem;}.contact-grid{grid-template-columns:1fr 1fr;gap:2.5rem;}}
+@media(max-width:768px){.reviews-grid{grid-template-columns:1fr;gap:1rem;}.contact-grid{grid-template-columns:1fr;gap:2rem;}.quote-section{padding:4rem 1.75rem;}}
+@media(max-width:480px){.founder-grid{gap:2.5rem;}.quote-section{padding:3rem 1.25rem;}}
 </style>
 
 <footer class="site-footer-slim">
