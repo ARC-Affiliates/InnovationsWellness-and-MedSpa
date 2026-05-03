@@ -131,6 +131,33 @@ nav.main-nav{position:sticky;top:0;z-index:9900;background:rgba(250,248,245,0.96
 /* CARDS */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:1.25rem;margin:1.5rem 0 2rem;}
 .card{background:var(--white);border:1px solid var(--line);border-top:3px solid transparent;padding:2rem 1.75rem;transition:all 0.35s;}
+/* GOOGLE REVIEWS SECTION */
+.reviews-section{background:var(--bg2);padding:6rem 3rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.reviews-header{text-align:center;margin-bottom:3rem;}
+.reviews-google-badge{display:inline-flex;align-items:center;gap:0.6rem;background:var(--white);border:1px solid var(--line);padding:0.5rem 1rem 0.5rem 0.75rem;border-radius:100px;margin-bottom:1.5rem;}
+.reviews-google-badge svg{width:18px;height:18px;flex-shrink:0;}
+.reviews-google-badge span{font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);font-weight:500;}
+.reviews-aggregate{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:0.5rem;}
+.reviews-score{font-family:'Playfair Display',serif;font-size:3rem;font-weight:400;color:var(--ink);line-height:1;}
+.reviews-stars-row{display:flex;gap:3px;}
+.reviews-stars-row svg{width:20px;height:20px;fill:#f5a623;}
+.reviews-count{font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);text-align:center;}
+.reviews-grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem;}
+.review-card{background:var(--white);border:1px solid var(--line);padding:1.75rem;position:relative;transition:box-shadow 0.3s,transform 0.3s;}
+.review-card:hover{box-shadow:var(--shadow);transform:translateY(-2px);}
+.review-card-header{display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;}
+.review-avatar{width:40px;height:40px;border-radius:50%;background:var(--rose);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1rem;color:#fff;flex-shrink:0;}
+.review-meta{flex:1;min-width:0;}
+.review-name{font-size:0.78rem;font-weight:500;color:var(--ink);letter-spacing:0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.review-date{font-size:0.6rem;color:var(--muted2);letter-spacing:0.05em;margin-top:1px;}
+.review-card-stars{display:flex;gap:2px;margin-bottom:0.85rem;}
+.review-card-stars svg{width:14px;height:14px;fill:#f5a623;}
+.review-text{font-size:0.82rem;color:var(--muted);line-height:1.85;font-style:italic;}
+.reviews-cta{text-align:center;margin-top:2.5rem;}
+.reviews-cta a{font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:2px;transition:color 0.2s,border-color 0.2s;}
+.reviews-cta a:hover{color:var(--rose);border-color:var(--rose);}
+@media(max-width:900px){.reviews-grid-cards{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.reviews-grid-cards{grid-template-columns:1fr;}.reviews-section{padding:4rem 1.25rem;}}
 .card:hover{border-top-color:var(--rose);box-shadow:var(--shadow);transform:translateY(-4px);}
 .card-title{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ink);margin-bottom:0.5rem;}
 .card-desc{font-size:0.78rem;color:var(--muted);line-height:1.8;}
@@ -453,13 +480,86 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:5.5rem 3rem 2.5
     <div style="display:flex;align-items:center;justify-content:center;gap:1rem;"><div style="height:1px;width:3rem;background:var(--rose);opacity:0.4;"></div><span style="font-size:0.56rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);">Innovations Wellness &amp; MedSpa</span><div style="height:1px;width:3rem;background:var(--rose);opacity:0.4;"></div></div>
   </div>
 </section>
-<section class="section" style="background:var(--white);">
+<section class="reviews-section">
   <div class="container">
-    <div style="text-align:center;margin-bottom:3.5rem;">
-      <div class="label fade-in" style="justify-content:center;">Words From Our Family</div>
-      <h2 class="sec-title fade-in">Why They <em>Keep Coming Back</em></h2>
+    <div class="reviews-header">
+      <div class="reviews-google-badge fade-in">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <span>Google Reviews</span>
+      </div>
+      <div class="reviews-aggregate fade-in">
+        <div class="reviews-score">5.0</div>
+        <div>
+          <div class="reviews-stars-row">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-count fade-in">Based on Google Reviews &nbsp;&#183;&nbsp; Canton, Georgia</div>
     </div>
-    <div class="reviews-grid"><div class="card fade-in fade-in-delay-1"><div style="color:var(--rose);font-size:0.72rem;letter-spacing:3px;margin-bottom:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-size:0.82rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-style:italic;">"Absolutely love this place. The staff is so knowledgeable and welcoming. My skin has never looked better."</p><div style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);">Jenny R.</div></div><div class="card fade-in fade-in-delay-2"><div style="color:var(--rose);font-size:0.72rem;letter-spacing:3px;margin-bottom:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-size:0.82rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-style:italic;">"The hormone therapy has been life-changing. I feel like myself again &#8212; more energy, better sleep, and a truly positive outlook."</p><div style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);">Andrea J.</div></div><div class="card fade-in fade-in-delay-3"><div style="color:var(--rose);font-size:0.72rem;letter-spacing:3px;margin-bottom:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-size:0.82rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-style:italic;">"Janet and her team are exceptional. I came in for microneedling and left genuinely impressed. I'll be a client for life."</p><div style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);">Angela R.</div></div></div>
+    <div class="reviews-grid-cards">
+      <div class="review-card fade-in fade-in-delay-1">
+        <div class="review-card-header">
+          <div class="review-avatar">J</div>
+          <div class="review-meta">
+            <div class="review-name">Jenny R.</div>
+            <div class="review-date">Google Review</div>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" style="flex-shrink:0;opacity:0.5"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        </div>
+        <div class="review-card-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">&#8220;Absolutely love this place. The staff is so knowledgeable and welcoming. My skin has never looked better.&#8221;</p>
+      </div>
+      <div class="review-card fade-in fade-in-delay-2">
+        <div class="review-card-header">
+          <div class="review-avatar" style="background:var(--gold);">A</div>
+          <div class="review-meta">
+            <div class="review-name">Andrea J.</div>
+            <div class="review-date">Google Review</div>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" style="flex-shrink:0;opacity:0.5"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        </div>
+        <div class="review-card-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">&#8220;The hormone therapy has been life-changing. I feel like myself again &#8212; more energy, better sleep, and a truly positive outlook.&#8221;</p>
+      </div>
+      <div class="review-card fade-in fade-in-delay-3">
+        <div class="review-card-header">
+          <div class="review-avatar" style="background:var(--ink2);">A</div>
+          <div class="review-meta">
+            <div class="review-name">Angela R.</div>
+            <div class="review-date">Google Review</div>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" style="flex-shrink:0;opacity:0.5"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        </div>
+        <div class="review-card-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">&#8220;Janet and her team are exceptional. I came in for microneedling and left genuinely impressed. I&#8217;ll be a client for life.&#8221;</p>
+      </div>
+    </div>
+    <div class="reviews-cta fade-in">
+      <a href="https://www.google.com/maps/search/Innovations+Wellness+MedSpa+Canton+GA" target="_blank" rel="noopener">Read all reviews on Google &#8594;</a>
+    </div>
   </div>
 </section>
 <section class="section" style="background:var(--bg2);">
