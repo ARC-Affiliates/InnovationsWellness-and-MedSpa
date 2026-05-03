@@ -97,8 +97,8 @@ nav.main-nav{position:sticky;top:0;z-index:9900;background:rgba(250,248,245,0.96
 .btn-ink:hover{background:var(--ink2);transform:translateY(-2px);}
 .page-hero{background:#ede8df url("/botanical-bg.svg") center/cover no-repeat;border-bottom:1px solid var(--line);padding:5.5rem 3rem 4.5rem;position:relative;overflow:hidden;}
 .page-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--rose),transparent);opacity:0.3;}
-.page-hero-img{position:absolute;top:0;right:0;width:44%;height:100%;object-fit:cover;opacity:0.42;}
-.page-hero-img-tint{position:absolute;top:0;right:0;width:44%;height:100%;background:linear-gradient(to right,var(--bg2) 0%,transparent 100%);}
+.page-hero-img{position:absolute;top:0;right:0;width:44%;height:100%;object-fit:cover;opacity:0.55;-webkit-mask-image:linear-gradient(to right,transparent 0%,black 28%,black 100%);mask-image:linear-gradient(to right,transparent 0%,black 28%,black 100%);}
+.page-hero-img-tint{display:none;}
 .page-hero-content{position:relative;z-index:1;max-width:1160px;margin:0 auto;}
 .breadcrumb{font-size:0.56rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted2);margin-bottom:1.5rem;}
 .breadcrumb a{color:var(--muted2);transition:color 0.2s;}
